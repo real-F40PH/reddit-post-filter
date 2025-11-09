@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Post Filter",
+  "version": "1.0.0",
+  "permissions": [],
+  "icons": {
+    "16": "icons/poop-16.png",
+    "48": "icons/poop-48.png",
+    "128": "icons/poop-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.reddit.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
